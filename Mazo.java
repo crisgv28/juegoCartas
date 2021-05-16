@@ -12,9 +12,10 @@ public class Mazo
     premios p[] = new premios[10];
     
     public Mazo(){
-        String s1 = JOptionPane.showInputDialog("Digite el numero de parejas deseadas");
+        JOptionPane.showMessageDialog(null, "A continuacion debe digitar la cantidad de parejas y trios que desea en el mazo");
+        String s1 = JOptionPane.showInputDialog("Cantidad de parejas deseadas");
         k = Integer.parseInt(s1);
-        String s2 = JOptionPane.showInputDialog("Digite el numero de trios deseados");
+        String s2 = JOptionPane.showInputDialog("Cantidad de trios deseados");
         t = Integer.parseInt(s2);
         n = 2*k+3*t;
         mazo = new cartaletranumero[n];
@@ -42,4 +43,11 @@ public class Mazo
         
     }
     
+    public int darN(){
+        return n;
+    }
+    
+    public cartaletranumero darCarta(int i){
+        return mazo[i];
+    }
 }
