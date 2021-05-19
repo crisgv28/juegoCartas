@@ -50,4 +50,10 @@ public class Mazo
     public cartaletranumero darCarta(int i){
         return mazo[i];
     }
+    
+    public void quitarCarta(int i){
+        mazo[i]=null;
+    }
+    
+    
 }

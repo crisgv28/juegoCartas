@@ -24,6 +24,7 @@ public class cartaletranumero
     public int darNumero(){
         return numero;
     }
+
     
  
 }
